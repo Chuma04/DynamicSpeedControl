@@ -2,7 +2,8 @@
 {
     public class RestrictedAreaEntity : BaseEntity
     {
-        public List<Coordinate> Perimeter { get; set; }
+        public List<Coordinate> Perimeter { get; set; } = new();
+        public int SpeedLimit { get; set; }
 
         // Method to check if the current location is in the restricted area
         public bool IsInArea(Coordinate currentLocation)
